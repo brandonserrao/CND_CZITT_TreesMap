@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "treesdata",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "type": "bois", "girth": "5", "height": "10", "width": "10", "age": "11", "date": "2020-10-11" }, "geometry": { "type": "Point", "coordinates": [ -61.459409454919047, 10.651346630649327 ] } },
+{ "type": "Feature", "properties": { "id": 2, "type": "poui", "girth": "2", "height": "5", "width": "5", "age": "5", "date": "2020-12-1" }, "geometry": { "type": "Point", "coordinates": [ -61.424730273029695, 10.607997653287635 ] } },
+{ "type": "Feature", "properties": { "id": 3, "type": "poui", "girth": "3", "height": "5", "width": "7", "age": "2", "date": "2021-01-2" }, "geometry": { "type": "Point", "coordinates": [ -61.459409454919061, 10.614740827543896 ] } }
+]
+}
