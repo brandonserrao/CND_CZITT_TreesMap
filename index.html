@@ -3,22 +3,22 @@
 
 	<head>
 		<title>My Interactive Map</title>
-		
+
 		<!-- this is what an HTML comment looks like -->
 		 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
 			crossorigin=""/>
-   
+
 		<!-- Make sure you put this AFTER Leaflet's CSS -->
 		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
 			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
 			crossorigin="">
 		</script>
-		
+
 		<link rel="stylesheet" href="style.css"/>
 	</head>
-	
-	
+
+
 	<body>
 		 <div id="mapid"></div>
 		 <script>
@@ -28,26 +28,41 @@
 			};
 			const myMap = L.map("mapid", mapOptions);
 			const Maptiles_A = L.tileLayer(
-				'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
+				'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 				{
 				maxZoom: 19,
 				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 			});
-			
+
 			Maptiles_A.addTo(myMap).setOpacity(0.5);
-			
+
 			let treeLayer = L.geoJSON(null,
-									{onEachFeature: 
+									{
+										onEachFeature:
 										function (feature, layer) {
-										layer.bindPopup(`Tree Type:<i>${feature.properties.type}<i>`)
+											f = feature.properties;
+										//layer.bindPopup(`Tree Type:<i>${feature.properties.type}<i>`)
+										layer.bindPopup(`
+											<div class="tree-type">#${f.NUMBER}: ${f.TYPE}</div>
+											<div class="timestamp">${f.PHOTO_TIMESTAMP}</div>
+											<div class="photo">placeholder text</div>
+											<div class="offset">Est.Offset: ${f.CARBONOFF_EST}</div>
+											<div class="beneficiary">Beneficiary: ${f.BENEFICIARY}</div>
+											<div class="planter">Planter: ${f.PLANTER}</div>
+											<div class="risk-level">Risk: ${f.RISKLEVEL}</div>
+											`)
 										},
-									filter: function (feature) {
-										if (feature.properties.girth >2) 
+										
+
+/*									filter: function (feature) {
+										if (feature.geometry)
 											{return true}
-										else 
+										else
 											{return false}
 										},
-									pointToLayer: function(feature, latlng) {
+*/
+
+/*									pointToLayer: function(feature, latlng) {
 										let iconOptions = {
 											iconUrl: 'treeicon.png',
 											iconSize: [32, 32],
@@ -63,22 +78,22 @@
 										return L.marker(latlng, {icon:
 										L.icon(iconOptions)})
 									},
-
-									}									
+*/
+									}
 									);
 			treeLayer.addTo(myMap);
 			//fetching the data
 			let treeData; //creating an empty container for treedata
 
-			fetch("./treesdata.geojson") 
-				.then(response => { 
-				return response.json(); 
+			fetch("./treesdata_wgs84.geojson")
+				.then(response => {
+				return response.json();
 			})
 			.then(data => {
 				return treeData = data;
-				}) 
-			.then(data => treeLayer.addData(data)); 
+				})
+			.then(data => treeLayer.addData(data));
 		</script>
 	</body>
-	
+
 </html>
