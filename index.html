@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>My Interactive Map</title>
+		
+		<!-- this is what an HTML comment looks like -->
+		 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+			crossorigin=""/>
+   
+		<!-- Make sure you put this AFTER Leaflet's CSS -->
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+			integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+			crossorigin="">
+		</script>
+		
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	
+	
+	<body>
+		 <div id="mapid"></div>
+		 <script>
+			let mapOptions = {
+				center: [11.01, -61.1],
+				zoom: 7,
+			};
+			const myMap = L.map("mapid", mapOptions);
+			const Maptiles_A = L.tileLayer(
+				'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
+				{
+				maxZoom: 19,
+				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+			});
+			
+			Maptiles_A.addTo(myMap).setOpacity(0.5);
+			
+			let treeLayer = L.geoJSON(null,
+									{onEachFeature: 
+										function (feature, layer) {
+										layer.bindPopup(`Tree Type:<i>${feature.properties.type}<i>`)
+										},
+									filter: function (feature) {
+										if (feature.properties.girth >2) 
+											{return true}
+										else 
+											{return false}
+										},
+									pointToLayer: function(feature, latlng) {
+										let iconOptions = {
+											iconUrl: 'treeicon.png',
+											iconSize: [32, 32],
+											iconAnchor: [16, 16],
+											popupAnchor: [0, -8]
+											};
+										if (feature.properties.type == 'poui') {
+											iconOptions.iconUrl = 'pouiIcon.png';
+										}
+										else if (feature.properties.type == 'bois') {
+											iconOptions.iconUrl = 'boisIcon.png';
+										}
+										return L.marker(latlng, {icon:
+										L.icon(iconOptions)})
+									},
+
+									}									
+									);
+			treeLayer.addTo(myMap);
+			//fetching the data
+			let treeData; //creating an empty container for treedata
+
+			fetch("./treesdata.geojson") 
+				.then(response => { 
+				return response.json(); 
+			})
+			.then(data => {
+				return treeData = data;
+				}) 
+			.then(data => treeLayer.addData(data)); 
+		</script>
+	</body>
+	
+</html>
