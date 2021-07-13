@@ -1,0 +1,3 @@
+cmd
+cd into working directory
+live-server to host the index locally

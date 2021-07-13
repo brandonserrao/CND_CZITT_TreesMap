@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- BRANDON SERRAO, CONTRIBUTING TO INTERNSHIP FOR CONSULTANTS NEXT DOOR & CARBON ZERO INSTITUTE OF TRINIDAD AND TOBAGO -->
 <html>
 
 	<head>
@@ -23,8 +24,8 @@
 		 <div id="mapid"></div>
 		 <script>
 			let mapOptions = {
-				center: [11.01, -61.1],
-				zoom: 7,
+				center: [10.69, -61.1],
+				zoom: 9,
 			};
 			const myMap = L.map("mapid", mapOptions);
 			const Maptiles_A = L.tileLayer(
@@ -35,6 +36,17 @@
 			});
 
 			Maptiles_A.addTo(myMap).setOpacity(0.5);
+
+			//FORMATTING DATA LAYER
+			let marker_icon = L.icon({
+				iconUrl: "marker-icon.png",
+				iconAnchor: [12, 20],
+			})
+			let selected_icon = L.icon({
+				iconUrl: "highlighted-icon.png",
+				iconAnchor: [12, 20],
+				popupAnchor: [0, -10]
+			});
 
 			let treeLayer = L.geoJSON(null,
 									{
@@ -52,15 +64,16 @@
 											<div class="risk-level">Risk: ${f.RISKLEVEL}</div>
 											`)
 										},
-										
 
-/*									filter: function (feature) {
-										if (feature.geometry)
-											{return true}
-										else
-											{return false}
+										pointToLayer: function (feature, latlng) {
+											let marker = L.marker(latlng, {
+												title: "click to inspect", //adds tooltip
+												riseOnHover: true, //brings marker on top of others on hover
+												icon: marker_icon,
+											});
+
+											return marker;
 										},
-*/
 
 /*									pointToLayer: function(feature, latlng) {
 										let iconOptions = {
@@ -81,9 +94,45 @@
 */
 									}
 									);
+
 			treeLayer.addTo(myMap);
-			//fetching the data
+
+
+
+			//HIGHLIGHTING FUNCTIONALITY
+			let selected = null;
+			treeLayer.on("click", function(event) { //binding onclick event listener to all members of the layer in one go
+				let fade = 0.2;
+				if (selected == null) {
+					console.log("first selection, increasing transparency")
+					treeLayer.invoke("setOpacity", fade);
+				}
+				else {
+					selected.setOpacity(fade);
+					selected.setIcon(marker_icon);
+					console.log("switching selection");
+				}
+				selected = event.layer;
+				console.log(selected);
+				selected.setOpacity(1.0);
+				selected.setIcon(selected_icon);
+
+			})
+			//to reset opacity of markers by clicking on the map itself
+			myMap.on("click", function (event) {
+				if (selected) {
+					console.log("clearing selection, resetting opacity")
+					selected.setIcon(marker_icon);
+					selected = null;
+					treeLayer.invoke("setOpacity", 1.0);
+				}
+			})
+
+
+			//FETCHING THE DATA
 			let treeData; //creating an empty container for treedata
+			let beneficiary_list = {};
+			let planter_list = {};
 
 			fetch("./treesdata_wgs84.geojson")
 				.then(response => {
