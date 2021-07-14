@@ -22,7 +22,8 @@ html, body{
 }
 
 .photo {
-
+	width: 128px;
+	height: 128px;
 }
 
 .offset {
@@ -38,5 +39,10 @@ html, body{
 }
 
 .risk-level {
-	
+
+}
+
+.sidebar-tab-icon {
+	width: 32px;
+	height: 32px;
 }

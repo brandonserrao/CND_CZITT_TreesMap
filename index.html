@@ -4,7 +4,6 @@
 
 	<head>
 		<title>My Interactive Map</title>
-
 		<!-- this is what an HTML comment looks like -->
 		 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -17,12 +16,21 @@
 		</script>
 
 		<link rel="stylesheet" href="style.css"/>
+
+		<!--sidebar files-->
+		<script src="./plugins/sidebar/leaflet-sidebar.js">
+		</script>
+		<link rel="stylesheet" href="./plugins/sidebar/leaflet-sidebar.css"/>
+
+	 </script>
+
 	</head>
 
 
 	<body>
 		 <div id="mapid"></div>
 		 <script>
+		 //SETUP MAP OBJECT
 			let mapOptions = {
 				center: [10.69, -61.1],
 				zoom: 9,
@@ -36,6 +44,7 @@
 			});
 
 			Maptiles_A.addTo(myMap).setOpacity(0.5);
+			//END - SETUP MAP OBJECT
 
 			//FORMATTING DATA LAYER
 			let marker_icon = L.icon({
@@ -57,7 +66,7 @@
 										layer.bindPopup(`
 											<div class="tree-type">#${f.NUMBER}: ${f.TYPE}</div>
 											<div class="timestamp">${f.PHOTO_TIMESTAMP}</div>
-											<div class="photo">placeholder text</div>
+											<img class="photo" src="./photos/placeholder.png" alt="Photo of tree">
 											<div class="offset">Est.Offset: ${f.CARBONOFF_EST}</div>
 											<div class="beneficiary">Beneficiary: ${f.BENEFICIARY}</div>
 											<div class="planter">Planter: ${f.PLANTER}</div>
@@ -74,29 +83,39 @@
 
 											return marker;
 										},
-
-/*									pointToLayer: function(feature, latlng) {
-										let iconOptions = {
-											iconUrl: 'treeicon.png',
-											iconSize: [32, 32],
-											iconAnchor: [16, 16],
-											popupAnchor: [0, -8]
-											};
-										if (feature.properties.type == 'poui') {
-											iconOptions.iconUrl = 'pouiIcon.png';
-										}
-										else if (feature.properties.type == 'bois') {
-											iconOptions.iconUrl = 'boisIcon.png';
-										}
-										return L.marker(latlng, {icon:
-										L.icon(iconOptions)})
-									},
-*/
 									}
 									);
 
 			treeLayer.addTo(myMap);
+			//END - FORMATTING DATA LAYER
 
+			//SIDEBAR IMPLEMENTATION
+			let sidebar = L.control.sidebar({
+				autopan: false,
+				closeButton: true,
+				container: "sidebar",
+				position: "right"
+			}).addTo(myMap);
+
+			let info = "<h1>Test content</h1>"; //TODO add static content for splash-screen-sidebar
+			let panelContent = {
+			    id: 'info',
+			    tab: '<img class ="sidebar-tab-icon" src="treeicon.png">', //TODO get better icon
+			    pane: info,
+			    title: 'Author Information',
+			    position: 'top'
+			};
+			sidebar.addPanel(panelContent);
+			sidebar.open("info");
+
+			sidebar.addPanel({
+			    id: 'ghlink',
+			    tab: '<img class ="sidebar-tab-icon" src="treeicon.png">', //TODO get better icon
+			    button: 'https://github.com/brandonserrao/CND_CZITT_TreesMap',
+					position: "bottom"
+			});
+
+			//END - SIDEBAR IMPLEMENTATION
 
 
 			//HIGHLIGHTING FUNCTIONALITY
@@ -127,12 +146,10 @@
 					treeLayer.invoke("setOpacity", 1.0);
 				}
 			})
-
+			//END - HIGHLIGHTING FUNCTIONALITY
 
 			//FETCHING THE DATA
 			let treeData; //creating an empty container for treedata
-			let beneficiary_list = {};
-			let planter_list = {};
 
 			fetch("./treesdata_wgs84.geojson")
 				.then(response => {
@@ -142,6 +159,7 @@
 				return treeData = data;
 				})
 			.then(data => treeLayer.addData(data));
+			//END - FETCHING THE DATA
 		</script>
 	</body>
 
