@@ -3,7 +3,7 @@
 <html>
 
 	<head>
-		<title>My Interactive Map</title>
+		<title>Map Local Copy</title>
 		<!-- this is what an HTML comment looks like -->
 		 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -21,8 +21,6 @@
 		<script src="./plugins/sidebar/leaflet-sidebar.js">
 		</script>
 		<link rel="stylesheet" href="./plugins/sidebar/leaflet-sidebar.css"/>
-
-	 </script>
 
 	</head>
 
@@ -97,12 +95,16 @@
 				position: "right"
 			}).addTo(myMap);
 
-			let info = "<h1>Test content</h1>"; //TODO add static content for splash-screen-sidebar
+			//let info = "<h1>Test content</h1>"; //TODO add static content for splash-screen-sidebar
+			//TODO fix closebutton icon
+			let info = `<h1>Tree Catalog - The Carbon Capture Institute of Trinidad & Tobago</h1>
+									<h2>Purpose:</h2>
+									<h2>Contributors:</h2>`;
 			let panelContent = {
 			    id: 'info',
-			    tab: '<img class ="sidebar-tab-icon" src="treeicon.png">', //TODO get better icon
+			    tab: '<img class ="sidebar-tab-icon" src="./logos/logo_color.png">', //TODO get better icon
 			    pane: info,
-			    title: 'Author Information',
+			    title: 'Information',
 			    position: 'top'
 			};
 			sidebar.addPanel(panelContent);
@@ -110,10 +112,13 @@
 
 			sidebar.addPanel({
 			    id: 'ghlink',
-			    tab: '<img class ="sidebar-tab-icon" src="treeicon.png">', //TODO get better icon
+			    tab: '<img class ="sidebar-tab-icon" src="./logos/github_logo.png">', //TODO get better icon
 			    button: 'https://github.com/brandonserrao/CND_CZITT_TreesMap',
 					position: "bottom"
 			});
+
+				//close on map click behaviour
+			myMap.on("click", function () {sidebar.close()});
 
 			//END - SIDEBAR IMPLEMENTATION
 
@@ -147,6 +152,10 @@
 				}
 			})
 			//END - HIGHLIGHTING FUNCTIONALITY
+
+			//MARKER DOUBLE CLICK FUNCTIONALITY
+			//treeLayer.on("dblclick", )
+			//END - MARKER DOUBLE CLICK FUNCTIONALITY
 
 			//FETCHING THE DATA
 			let treeData; //creating an empty container for treedata

@@ -13,17 +13,23 @@ html, body{
 	width: 100vw;
 }
 
+.sidebar-tab-icon {
+	width: 32px;
+	height: 32px;
+}
+
+.photo {
+	width: 128px;
+	height: 128px;
+}
+
+
 .tree-type {
 
 }
 
 .timestamp {
 
-}
-
-.photo {
-	width: 128px;
-	height: 128px;
 }
 
 .offset {
@@ -40,9 +46,4 @@ html, body{
 
 .risk-level {
 
-}
-
-.sidebar-tab-icon {
-	width: 32px;
-	height: 32px;
 }
