@@ -17,6 +17,7 @@
 
 		<link rel="stylesheet" href="style.css"/>
 
+
 		<!--sidebar files-->
 		<script src="./plugins/sidebar/leaflet-sidebar.js">
 		</script>
@@ -55,6 +56,31 @@
 				popupAnchor: [0, -10]
 			});
 
+			//EXPERIMENTAL FUNCTIONS
+			function onTreeFeature (feature, layer) {
+										f = feature.properties;
+										//layer.bindPopup(`Tree Type:<i>${feature.properties.type}<i>`)
+										layer.bindPopup(`
+											<div class="tree-type">#${f.NUMBER}: ${f.TYPE}</div>
+											<div class="timestamp">${f.PHOTO_TIMESTAMP}</div>
+											<img class="photo" src="./photos/placeholder.png" alt="Photo of tree">
+											<div class="offset">Est.Offset: ${f.CARBONOFF_EST}</div>
+											<div class="beneficiary">Beneficiary: ${f.BENEFICIARY}</div>
+											<div class="planter">Planter: ${f.PLANTER}</div>
+											`)
+										};
+			function treeToLayer(feature, latlng) {
+											let marker = L.marker(latlng, {
+												title: "click to inspect", //adds tooltip
+												riseOnHover: true, //brings marker on top of others on hover
+												icon: marker_icon,
+											});
+
+											return marker;
+										}
+			//END - EXPERIMENTAL FUNCTIONS
+
+/*			//obsoleted
 			let treeLayer = L.geoJSON(null,
 									{
 										onEachFeature:
@@ -68,7 +94,6 @@
 											<div class="offset">Est.Offset: ${f.CARBONOFF_EST}</div>
 											<div class="beneficiary">Beneficiary: ${f.BENEFICIARY}</div>
 											<div class="planter">Planter: ${f.PLANTER}</div>
-											<div class="risk-level">Risk: ${f.RISKLEVEL}</div>
 											`)
 										},
 
@@ -85,7 +110,10 @@
 									);
 
 			treeLayer.addTo(myMap);
+			//end-obsoleted
+*/
 			//END - FORMATTING DATA LAYER
+
 
 			//SIDEBAR IMPLEMENTATION
 			let sidebar = L.control.sidebar({
@@ -95,11 +123,27 @@
 				position: "right"
 			}).addTo(myMap);
 
-			//let info = "<h1>Test content</h1>"; //TODO add static content for splash-screen-sidebar
+
+
 			//TODO fix closebutton icon
-			let info = `<h1>Tree Catalog - The Carbon Capture Institute of Trinidad & Tobago</h1>
-									<h2>Purpose:</h2>
-									<h2>Contributors:</h2>`;
+			let info=`<h1>Tree Catalog - The Carbon Zero Institute of Trinidad and Tobago</h1>
+					<h2>Purpose:</h2>
+					<p> Carbon emissions from fossil fuels, the inustrial sector and land use is the largest source of global Greenhouse Gas (GHG) emissions.
+					We must act now and do our part to combat the exacerbated effects of climate change.
+					The CZITT 1000 trees challenge initiative partners with schools, clubs and corporations to plant and record trees which are then geotagged.
+					Our goal is to establish a carbon offset registry in which its efforts are driven towards reducing carbon emissions via carbon sequestration as a proven climate change mitigation strategy.</p>
+					<h2>Contributors:</h2>
+					<p>Ryan Seemungal, Data Visualization Specialist</p>
+					<p>Brandon Serrao, Cartography Instructor</p>
+					<p>Sweelan Renaud, Program Assistant at Advisors Next Door</p>
+					<p>Aashrita Mohess, Intern at Advisors Next Door </p>
+					<h4> Contact:</4>
+					<p> Contact us at <a href="mailto:advisorsnextdoor@gmail.com"target="_blank">advisorsnextdoor@gmail.com</a> for more information</p>
+
+					<p>Visit <a href= "https://czitt-ed.org/"target="_blank">Caribbean E-Learning by the Carbon Zero Institute of Trinidad and Tobago</a> to learn more about this project and how you can get involved</p>
+
+					<p> Date Last Updated: 16th July 2021</p>
+					`;
 			let panelContent = {
 			    id: 'info',
 			    tab: '<img class ="sidebar-tab-icon" src="./logos/logo_color.png">', //TODO get better icon
@@ -122,14 +166,18 @@
 
 			//END - SIDEBAR IMPLEMENTATION
 
-
+			let treesLayerGroup = L.layerGroup().addTo(myMap);
 			//HIGHLIGHTING FUNCTIONALITY
+			//Broken-as using a single layer group to manage individual geoJSON featuregrouplayers per org
+			//selected marker still changes icon(if using a featureGroup instead of layerGroup); invoked fade appears not to work (due to reason raised above)
+			//TODO intended fix: ascertain selected _geoJSON layer of beneficiaries_ and apply fading(or interactive:false) to others
+			//then further behaviours to add after
 			let selected = null;
-			treeLayer.on("click", function(event) { //binding onclick event listener to all members of the layer in one go
+			treesLayerGroup.on("click", function(event) { //binding onclick event listener to all members of the layer in one go
 				let fade = 0.2;
 				if (selected == null) {
 					console.log("first selection, increasing transparency")
-					treeLayer.invoke("setOpacity", fade);
+					treesLayerGroup.invoke("setOpacity", fade);
 				}
 				else {
 					selected.setOpacity(fade);
@@ -148,15 +196,52 @@
 					console.log("clearing selection, resetting opacity")
 					selected.setIcon(marker_icon);
 					selected = null;
-					treeLayer.invoke("setOpacity", 1.0);
+					treesLayerGroup.invoke("setOpacity", 1.0);
 				}
 			})
 			//END - HIGHLIGHTING FUNCTIONALITY
 
 			//MARKER DOUBLE CLICK FUNCTIONALITY
-			//treeLayer.on("dblclick", )
+			//treesLayerGroup.on("dblclick", )
 			//END - MARKER DOUBLE CLICK FUNCTIONALITY
 
+
+//EXP-FETCHING AND SORTING Data
+
+			let beneficiaries = {}; //container to hold the separated data per beneficiary org
+			let org_control;
+
+			fetch("./treesdata_wgs84.geojson")
+			.then(response => {return response.json();})
+			.then(function(json) {
+				data = json.features;
+				for (let feature of data) {
+					console.log(feature);
+					let org = feature.properties.BENEFICIARY;
+
+					if (org == null) {org = "none"}
+					if (!(org in beneficiaries)) { //if the org is not in the dictionary
+						beneficiaries[org] = L.geoJSON(null, { // setup a new entry in the list, its settings, and add the record as well
+																									onEachFeature: onTreeFeature,
+																									pointToLayer: treeToLayer,
+																									});
+						treesLayerGroup.addLayer(beneficiaries[org]);
+					}
+					console.log()
+					beneficiaries[org].addData(feature);
+				}
+
+				console.log(beneficiaries);
+				return beneficiaries
+			})
+			.then(function(beneficiaries) {
+				org_control = L.control.layers(null, beneficiaries).addTo(myMap); //adds toggle control to map
+			})
+
+
+//END EXP-FETCHING AND SORTING DATA
+
+/*			//obsoleted by code to bring in layers per org
 			//FETCHING THE DATA
 			let treeData; //creating an empty container for treedata
 
@@ -169,6 +254,7 @@
 				})
 			.then(data => treeLayer.addData(data));
 			//END - FETCHING THE DATA
+*/
 		</script>
 	</body>
 
