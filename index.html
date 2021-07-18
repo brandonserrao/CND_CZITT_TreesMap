@@ -4,6 +4,7 @@
 
 	<head>
 		<title>Map Local Copy</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- this is what an HTML comment looks like -->
 		 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 			integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -157,10 +158,6 @@
 					<p>Brandon Serrao, Cartography Instructor</p>
 					<p>Sweelan Renaud, Program Assistant at Advisors Next Door</p>
 					<p>Aashrita Mohess, Intern at Advisors Next Door </p>
-					<p>Ryan Seemungal, Data Visualization Specialist<br>
-					Brandon Serrao, Cartography Instructor<br>
-					Sweelan Renaud, Program Assistant at Advisors Next Door<br>
-					Aashrita Mohess, Intern at Advisors Next Door </p>
 					<h4> Contact:</h4>
 					<p> Contact us at <a href="mailto:advisorsnextdoor@gmail.com"target="_blank">advisorsnextdoor@gmail.com</a> for more information</p>
 
@@ -185,13 +182,9 @@
 					position: "bottom"
 			});
 
-			sidebar.addPanel({
-				id: 'charts',
-				tab: '<img class="sidebar-tab-icon" src="./treeicon.png">', //placeholder
-				title: 'Graphs',
-				pane: '<h2>Total Trees Planted per Organization</h2><p>Hover to show values:</p><div id="chartdiv"></div>',
-				position: "top"
-			})
+
+
+
 
 				//close on map click behaviour
 			myMap.on("click", function () {sidebar.close()});
@@ -242,7 +235,7 @@
 
 			let beneficiaries = {}; //container to hold the separated data per beneficiary org
 			let org_control;
-
+			/*
 			L.Control.Chart = L.Control.extend({
 				onAdd: function(map) {
 					let div = L.DomUtil.create("div");
@@ -258,12 +251,50 @@
 				return new L.Control.Chart(opts);
 			}
 			let chart_control = L.control.chart({position:"bottomleft"}).addTo(myMap);
-
-
+			*/
+			//experiment - searcbar
+			/*
+			let search_control;
+			L.Control.Searchbar = L.Control.extend({
+				onAdd: function(map) {
+					let div = L.DomUtil.create("div");
+					div.style.width = "50vw";
+					div.id = "searchbarContainer";
+					div.innerHTML = `<h2>Beneficiary Organizations</h2>
+													<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+													<ul id="myUL">
+													  <li><a href="#">Adele</a></li>
+													  <li><a href="#">Agnes</a></li>
+													  <li><a href="#">Billy</a></li>
+													  <li><a href="#">Bob</a></li>
+													  <li><a href="#">Calvin</a></li>
+													  <li><a href="#">Christina</a></li>
+													  <li><a href="#">Cindy</a></li>
+													</ul>`; //TODO add code to add child list items from the beneficiaries dictionary (names) to then use to trigger toggling of layers with same name
+					return div;
+				},
+				onRemove: function(map) {
+					//nothing to do here, according to documentation
+				}
+			});
+			L.control.searchbar = function(opts) {
+				return new L.Control.Searchbar(opts);
+			}
+			let searchbar_control = L.control.searchbar({position:"bottomleft"}).addTo(myMap);
+			//end - searchbar
+			*/
 			fetch("./treesdata_wgs84.geojson")
 			.then(response => {return response.json();})
 			.then(function(json) {
 				data = json.features;
+				//add sidebar panel to hold this
+				sidebar.addPanel({
+					id: 'charts',
+					tab: '<img class="sidebar-tab-icon" src="./treeicon.png">', //placeholder
+					title: 'Graphs',
+					pane: '<h2>Total Trees Planted per Organization</h2><p>Hover to show values:</p><div id="chartdiv"></div>',
+					position: "top"
+				});
 				for (let feature of data) {
 					//console.log(feature);
 					let org = feature.properties.BENEFICIARY;
@@ -285,6 +316,31 @@
 			})
 			.then(function(beneficiaries) {//adding the toggle control to map
 				org_control = L.control.layers(null, beneficiaries).setPosition("topright").addTo(myMap); //adds toggle control to map
+
+				//adding searchbar to sidebar
+				sidebar.addPanel({
+					id: 'search',
+					tab: '<img class="sidebar-tab-icon" src="./treeicon.png">', //placeholder
+					title: 'Searchbar',
+					pane: `<h2>Beneficiary Organizations</h2>
+													<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+													<ul id="myUL">
+													<!--commenting the placeholders out
+														<li><a href="#">test2</a></li>
+														<li><a href="#">test 1</a></li>
+														-->
+													</ul>`,//
+					position: "top",
+				});
+
+				//adding entries to the list
+				let orgList = L.DomUtil.get("myUL");//get intended container list for the results
+				for (org in beneficiaries) {
+					console.log(org);
+					let entry = L.DomUtil.create("li", "search-entry", orgList);
+					entry.innerHTML = ("<a href='#'>" + org + "</a>");
+				}
+
 				return beneficiaries
 			})
 			.then(function(beneficiaries) {
@@ -342,6 +398,28 @@
 			//END - FETCHING THE DATA
 */
 		</script>
+		<script>
+		// taken from w3school
+			function myFunction() {
+			  // Declare variables
+			  var input, filter, ul, li, a, i, txtValue;
+			  input = document.getElementById('myInput');
+			  filter = input.value.toUpperCase();
+			  ul = document.getElementById("myUL");
+			  li = ul.getElementsByTagName('li');
+
+			  // Loop through all list items, and hide those who don't match the search query
+			  for (i = 0; i < li.length; i++) {
+			    a = li[i].getElementsByTagName("a")[0];
+			    txtValue = a.textContent || a.innerText;
+			    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+			      li[i].style.display = "";
+			    } else {
+			      li[i].style.display = "none";
+			    }
+			  }
+			}
+</script>
 	</body>
 
 </html>
