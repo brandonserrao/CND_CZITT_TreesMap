@@ -52,6 +52,30 @@
 			Maptiles_A.addTo(myMap).setOpacity(0.5);
 			//END - SETUP MAP OBJECT
 
+			//adding copyright/name control to map //taken from leaflet tutorials
+			L.Control.Watermark = L.Control.extend({
+			    onAdd: function(map) {
+			        let watermark = L.DomUtil.create('div');
+
+			        watermark.innerHTML = 'CZITT CORE (c) Carbon Zero Institute of Trinidad and Tobago 2021';
+							watermark.id = "watermark";
+							watermark.style.class = "leaflet-control-attribution";
+
+			        return watermark;
+			    },
+
+			    onRemove: function(map) {
+			        // Nothing to do here
+			    }
+			});
+
+			L.control.watermark = function(opts) {
+			    return new L.Control.Watermark(opts);
+			}
+
+			L.control.watermark({ position: 'bottomleft' }).addTo(myMap);
+			//end- adding copyright
+
 			//FORMATTING DATA LAYER
 			let marker_icon = L.icon({
 				iconUrl: "marker-icon.png",
@@ -67,7 +91,13 @@
 				iconSize: [32, 32],
 				iconAnchor: [16, 16],
 				popupAnchor: [0, -8],
-			})
+			});
+			let poui_icon = L.icon({
+				iconUrl: "pouiIcon.png",
+				iconSize: [32, 32],
+				iconAnchor: [16, 16],
+				popupAnchor: [0, -8],
+			});
 
 			//EXPERIMENTAL FUNCTIONS
 			function onTreeFeature (feature, layer) {
@@ -101,38 +131,6 @@
 										}
 			//END - EXPERIMENTAL FUNCTIONS
 
-/*			//obsoleted
-			let treeLayer = L.geoJSON(null,
-									{
-										onEachFeature:
-										function (feature, layer) {
-											f = feature.properties;
-										//layer.bindPopup(`Tree Type:<i>${feature.properties.type}<i>`)
-										layer.bindPopup(`
-											<div class="tree-type">#${f.NUMBER}: ${f.TYPE}</div>
-											<div class="timestamp">${f.PHOTO_TIMESTAMP}</div>
-											<img class="photo" src="./photos/placeholder.png" alt="Photo of tree">
-											<div class="offset">Est.Offset: ${f.CARBONOFF_EST}</div>
-											<div class="beneficiary">Beneficiary: ${f.BENEFICIARY}</div>
-											<div class="planter">Planter: ${f.PLANTER}</div>
-											`)
-										},
-
-										pointToLayer: function (feature, latlng) {
-											let marker = L.marker(latlng, {
-												title: "click to inspect", //adds tooltip
-												riseOnHover: true, //brings marker on top of others on hover
-												icon: marker_icon,
-											});
-
-											return marker;
-										},
-									}
-									);
-
-			treeLayer.addTo(myMap);
-			//end-obsoleted
-*/
 			//END - FORMATTING DATA LAYER
 
 
@@ -187,102 +185,20 @@
 
 
 				//close on map click behaviour
-			myMap.on("click", function () {sidebar.close()});
+			myMap.on("click", function () {
+				sidebar.close();
+			});
 
 			//END - SIDEBAR IMPLEMENTATION
 
 			let treesLayerGroup = L.layerGroup().addTo(myMap);
-			//HIGHLIGHTING FUNCTIONALITY
-			//Broken-as using a single layer group to manage individual geoJSON featuregrouplayers per org
-			//selected marker still changes icon(if using a featureGroup instead of layerGroup); invoked fade appears not to work (due to reason raised above)
-			//TODO intended fix: ascertain selected _geoJSON layer of beneficiaries_ and apply fading(or interactive:false) to others
-			//then further behaviours to add after
-			let selected = null;
-			treesLayerGroup.on("click", function(event) { //binding onclick event listener to all members of the layer in one go
-				let fade = 0.2;
-				if (selected == null) {
-					console.log("first selection, increasing transparency")
-					treesLayerGroup.invoke("setOpacity", fade);
-				}
-				else {
-					selected.setOpacity(fade);
-					selected.setIcon(marker_icon);
-					console.log("switching selection");
-				}
-				selected = event.layer;
-				console.log(selected);
-				selected.setOpacity(1.0);
-				selected.setIcon(selected_icon);
-
-			})
-			//to reset opacity of markers by clicking on the map itself
-			myMap.on("click", function (event) {
-				if (selected) {
-					console.log("clearing selection, resetting opacity")
-					selected.setIcon(marker_icon);
-					selected = null;
-					treesLayerGroup.invoke("setOpacity", 1.0);
-				}
-			})
-			//END - HIGHLIGHTING FUNCTIONALITY
-
-			//MARKER DOUBLE CLICK FUNCTIONALITY
-			//treesLayerGroup.on("dblclick", )
-			//END - MARKER DOUBLE CLICK FUNCTIONALITY
-
+			let highlighted = null; //storage for current highlighted selection
 
 //EXP-FETCHING AND SORTING Data
 
 			let beneficiaries = {}; //container to hold the separated data per beneficiary org
 			let org_control;
-			/*
-			L.Control.Chart = L.Control.extend({
-				onAdd: function(map) {
-					let div = L.DomUtil.create("div");
-					div.style.width = "500px";
-					div.id = "chartdiv";
-					return div;
-				},
-				onRemove: function(map) {
-					//nothing to do here, according to documentation
-				}
-			});
-			L.control.chart = function(opts) {
-				return new L.Control.Chart(opts);
-			}
-			let chart_control = L.control.chart({position:"bottomleft"}).addTo(myMap);
-			*/
-			//experiment - searcbar
-			/*
-			let search_control;
-			L.Control.Searchbar = L.Control.extend({
-				onAdd: function(map) {
-					let div = L.DomUtil.create("div");
-					div.style.width = "50vw";
-					div.id = "searchbarContainer";
-					div.innerHTML = `<h2>Beneficiary Organizations</h2>
-													<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-													<ul id="myUL">
-													  <li><a href="#">Adele</a></li>
-													  <li><a href="#">Agnes</a></li>
-													  <li><a href="#">Billy</a></li>
-													  <li><a href="#">Bob</a></li>
-													  <li><a href="#">Calvin</a></li>
-													  <li><a href="#">Christina</a></li>
-													  <li><a href="#">Cindy</a></li>
-													</ul>`; //TODO add code to add child list items from the beneficiaries dictionary (names) to then use to trigger toggling of layers with same name
-					return div;
-				},
-				onRemove: function(map) {
-					//nothing to do here, according to documentation
-				}
-			});
-			L.control.searchbar = function(opts) {
-				return new L.Control.Searchbar(opts);
-			}
-			let searchbar_control = L.control.searchbar({position:"bottomleft"}).addTo(myMap);
-			//end - searchbar
-			*/
+
 			fetch("./treesdata_wgs84.geojson")
 			.then(response => {return response.json();})
 			.then(function(json) {
@@ -290,8 +206,8 @@
 				//add sidebar panel to hold this
 				sidebar.addPanel({
 					id: 'charts',
-					tab: '<img class="sidebar-tab-icon" src="./treeicon.png">', //placeholder
-					title: 'Graphs',
+					tab: '<img class="sidebar-tab-icon" src="./chart_g&b.png">', //placeholder
+					title: '(Experimental) Graphs',
 					pane: '<h2>Total Trees Planted per Organization</h2><p>Hover to show values:</p><div id="chartdiv"></div>',
 					position: "top"
 				});
@@ -320,10 +236,12 @@
 				//adding searchbar to sidebar
 				sidebar.addPanel({
 					id: 'search',
-					tab: '<img class="sidebar-tab-icon" src="./treeicon.png">', //placeholder
+					tab: '<img class="sidebar-tab-icon" src="./magglass_blue.png">', //placeholder
 					title: 'Searchbar',
 					pane: `<h2>Beneficiary Organizations</h2>
+									<p>Left-click: Toggle choice on map. Right-click/Longpress to highlight the choice on map.</p>
 													<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+													<!--<button id="clearButton" onclick="clearSelections()">Clear Selection</button>-->
 													<ul id="myUL">
 													<!--commenting the placeholders out
 														<li><a href="#">test2</a></li>
@@ -334,11 +252,62 @@
 				});
 
 				//adding entries to the list
+
 				let orgList = L.DomUtil.get("myUL");//get intended container list for the results
 				for (org in beneficiaries) {
 					console.log(org);
 					let entry = L.DomUtil.create("li", "search-entry", orgList);
 					entry.innerHTML = ("<a href='#'>" + org + "</a>");
+					entry.class = "search-result";
+
+					//adding onclick behaviour
+					entry.onclick = function toggleSearchResult(ev) {
+						console.log(ev.target.innerHTML); //consider setZIndex from LayerGroup to manipulate highlighting/bring desired to forefront
+						let resultLayer = beneficiaries[ev.target.innerHTML];
+						if (treesLayerGroup.hasLayer(resultLayer)) {
+							treesLayerGroup.removeLayer(resultLayer);
+							console.log("remove")
+						}
+						else if (!(treesLayerGroup.hasLayer(resultLayer))) {
+							console.log("addLayer");
+							treesLayerGroup.addLayer(resultLayer);
+						}
+						else {console.log("unforseen search result selection behaviour")}
+					};
+
+					entry.oncontextmenu = function highlightSearchResult(ev) {
+						console.log(ev.target.innerHTML);
+						let resultLayer = beneficiaries[ev.target.innerHTML]; //TODO add styling change to the clicked results in searchbar (?) how to preserve this?
+						if (!(highlighted == null)) { //reset appearance of currently highlighted
+							console.log("resetting previously highlighted's style")
+							highlighted.invoke("setIcon", tree_icon);
+							highlighted.invoke("setOpacity", 1.0);
+							highlighted = null;
+						}
+						if (treesLayerGroup.hasLayer(resultLayer)) {
+							highlighted = resultLayer;
+							//treesLayerGroup.setZIndex(640);//between 600 which is markers and 650 which are tooltips
+							treesLayerGroup.eachLayer(function(beneficiary){
+								beneficiary.invoke("setOpacity", 0.2);
+							});
+							resultLayer.invoke("setIcon", poui_icon);
+							resultLayer.invoke("setOpacity", 1.0);
+							resultLayer.bringToFront();
+						}
+						else if (!(treesLayerGroup.hasLayer(resultLayer))) {
+							console.log("selected layer not currently in treesLayerGroup");
+							highlight = null;
+						}
+					}
+
+					myMap.on("click", function () {
+						if (!(highlighted == null)) {
+							treesLayerGroup.eachLayer(function(beneficiary){
+								beneficiary.invoke("setOpacity", 0.2);
+								beneficiary.invoke("setIcon", tree_icon);
+						});}
+						else {console.log("nothing highlighted, nothing to reset")}
+					})
 				}
 
 				return beneficiaries

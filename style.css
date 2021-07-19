@@ -22,10 +22,15 @@ html, body{
 	height: 60vh;
 }
 
+#watermark {
+	background-color: rgba(217, 217, 217, 0.2);
+}
 
 .sidebar-tab-icon {
 	width: 32px;
 	height: 32px;
+	padding-top: 2px;
+	padding-left: 2px;
 }
 
 .photo {
