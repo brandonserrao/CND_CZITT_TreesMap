@@ -1,72 +1,76 @@
 * {
-	box-sizing: border-box
+  box-sizing: border-box;
 }
 
-body{
-	padding: 0;
-	margin: 0;
+body {
+  padding: 0;
+  margin: 0;
 }
 
-html, body{
-	height: 100%;
-	width: 100vw;
+html,
+body {
+  height: 100%;
+  width: 100vw;
 }
 
 #mapid {
-	height: 100vh;
-	width: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
 
 #chartdiv {
-	width: 100%;
-	height: 60vh;
+  width: 100%;
+  height: 60vh;
 }
 
 #watermark {
-	background-color: rgba(217, 217, 217, 0.2);
+  background-color: rgba(217, 217, 217, 0.2);
 }
 
 .sidebar-tab-icon {
-	width: 32px;
-	height: 32px;
-	padding-top: 2px;
-	padding-left: 2px;
+  width: 32px;
+  height: 32px;
+  padding-top: 2px;
+  padding-left: 2px;
 }
 
 .photo {
-	width: 128px;
-	height: 128px;
+  /* width: 128px; */
+  /* height: 128px; */
+  /* taken from w3schools on responsive image settings */
+  max-width: 100%;
+  height: auto;
 }
 
-
 .tree-type {
-
 }
 
 .timestamp {
-
 }
 
 .offset {
-
 }
 
 .beneficiary {
-
 }
 
 .planter {
-
 }
 
 .risk-level {
-
 }
 
+.contributor-title {
+  text-decoration: none;
+}
+
+.contributor-name {
+  text-decoration: none;
+}
 /* for search bar, taken from w3schools*/
 
 #myInput {
-  background-image: url('/css/searchicon.png');
+  background-image: url("/css/searchicon.png");
   background-position: 10px 12px;
   background-repeat: no-repeat;
   width: 100%;
@@ -90,7 +94,7 @@ html, body{
   text-decoration: none;
   font-size: 18px;
   color: black;
-  display: block
+  display: block;
 }
 
 #myUL li a:hover:not(.header) {
