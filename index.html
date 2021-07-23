@@ -71,7 +71,7 @@
           let watermark = L.DomUtil.create("div");
 
           watermark.innerHTML = `<img alt="czitt's logo" src="logos/CZITT_LOGO.png">
-        														<div>CZITT CORE (c) Carbon Zero Institute of Trinidad and Tobago 2021</div>`;
+        														<div>CZITT CORE &copy; Carbon Zero Institute of Trinidad and Tobago 2021</div>`;
           watermark.id = "watermark";
           watermark.style.class = "leaflet-control-attribution";
 
@@ -122,8 +122,8 @@
         						<div class="timestamp">${f.PHOTO_TIMESTAMP}</div>
         						<img id="tree${f.NUMBER}" class="photo" src="./photos/${f.NUMBER}.jpg" alt="Photo of tree">
         						<div class="offset">Est.Offset: ${f.CARBONOFF_EST}</div>
-        						<div class="beneficiary">Beneficiary: ${f.BENEFICIARY}</div>
         						<div class="planter">Planter: ${f.PLANTER}</div>
+                    <div class="beneficiary">Beneficiary: ${f.BENEFICIARY}</div>
         						`);
 
         //TODO add better logic for this
@@ -168,12 +168,14 @@
         .addTo(myMap);
 
       //TODO fix closebutton icon
-      let info = `<h1>Tree Catalog - The Carbon Zero Institute of Trinidad and Tobago</h1>
+      let info = `<h1>Carbon Offset Register - The Carbon Zero Institute of Trinidad and Tobago</h1>
         <h2>Purpose:</h2>
-        <p> Carbon emissions from fossil fuels, the inustrial sector and land use is the largest source of global Greenhouse Gas (GHG) emissions.
+        <p>Trinidad and Tobago is one of the largest emitters of greenhouse gases per capita, in the world. To meet the goals of The Paris Agreement, Article 2, CZITT is developing a Carbon Offset Register (CORE). This involves the recording of major carbon offsetting initiatives and tracking of the country’s progress to carbon neutrality. One of these initiatives is through a partnership with the For the Exchange Farmers Association, to demonstrate the viability of agricultural produce intermixed with carbon sequestration in trees. This interactive map shows the trees planted by organizations, their locations as well as their potential to sequester carbon.</p>
+
+        <!--<p> Carbon emissions from fossil fuels, the inustrial sector and land use is the largest source of global Greenhouse Gas (GHG) emissions.
         We must act now and do our part to combat the exacerbated effects of climate change.
         The CZITT 1000 trees challenge initiative partners with schools, clubs and corporations to plant and record trees which are then geotagged.
-        Our goal is to establish a carbon offset registry in which its efforts are driven towards reducing carbon emissions via carbon sequestration as a proven climate change mitigation strategy.</p>
+        Our goal is to establish a carbon offset registry in which its efforts are driven towards reducing carbon emissions via carbon sequestration as a proven climate change mitigation strategy.</p>-->
         <h2>Contributors:</h2>
         <p><a href="https://www.linkedin.com/in/ryan-seemungal-gis-design/" target="_blank" style="color: black;" class="contributor-name">Ryan Seemungal</a>, <span class="contributor-title">Data Visualization Specialist</span></p>
         <p><a href="https://www.linkedin.com/in/brandon-serrao/" target="_blank" style="color: black;" class="contributor-name">Brandon Serrao</a>, <span class="contributor-title">Cartography & Web Mapping Instructor</span></p>
@@ -183,7 +185,8 @@
         <p> Contact us at <a href="mailto:advisorsnextdoor@gmail.com"target="_blank">advisorsnextdoor@gmail.com</a> for more information</p>
 
         <p>Visit <a href= "https://czitt-ed.org/"target="_blank">Caribbean E-Learning by the Carbon Zero Institute of Trinidad and Tobago</a> to learn more about this project and how you can get involved</p>
-        <p> Date Last Updated: 16th July 2021</p>
+        <p> Date Last Updated: 23rd July 2021</p>
+        <p>This map was created as part of a Capstone Stone Project done with Advisors Next Door.</p>
 
         `; //preferred position, but sidebar size adjustment makes the svg scale undesirably<div id="chartdiv"></div>
       let panelContent = {
