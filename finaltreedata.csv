@@ -1,0 +1,513 @@
+NUMBER,EASTINGS,NORTHINGS,TYPE,PHOTO_TIMESTAMP,PLANTER,CARBONOFF_EST,BENEFICIARY
+1,673456.57,1167947.17,Moringa,2018-06-30,Anastasia R,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+2,684415.05,1176623.37,Unknown,2018-07-01,Camanee Lutchman,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+3,684415.05,1176623.37,Unknown,2018-07-01,Camanee Lutchman,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+4,684415.05,1176623.37,Unknown,2018-07-01,Camanee Lutchman,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+5,688781.3,1174173.84,Moringa,2018-07-01,Chelsea Liverpool,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+6,674505.55,1176223.76,Moringa,2018-06-29,Esther Dumoy,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+7,682768.09,1178236.74,African Tulip,2018-07-01,Luise Beckles,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+8,682768.09,1178236.74,African Tulip,2018-07-01,Luise Beckles,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+9,682768.09,1178236.74,Cassia Fistula,2018-07-01,Luise Beckles,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+10,688804.8,1175418.43,Moringa,2018-07-01,Maalik Rose,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+11,688804.8,1175418.43,Moringa,2018-07-01,Maalik Rose,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+12,719127.1,1135710.55,Moringa,2018-07-08,Marc Bahadur,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+13,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+14,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+15,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+16,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+17,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+18,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+19,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+20,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+21,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+22,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+23,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+24,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+25,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+26,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+27,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+28,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+29,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+30,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+31,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+32,686059.06,1157123.94,Moringa,2018-06-29,Natasha Sharma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+33,675360.78,1173634.88,Moringa,2018-06-29,Patricia Jagassar,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+34,672882.37,1166659.97,Moringa,2018-06-29,Sarika B,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+35,672882.37,1166659.97,Moringa,2018-06-29,Sarika B,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+36,672882.37,1166659.97,Moringa,2018-06-29,Sarika B,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+37,672882.37,1166659.97,Moringa,2018-06-29,Sarika B,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+38,672882.37,1166659.97,Moringa,2018-06-29,Sarika B,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+39,678205.57,1177763.91,Moringa,2018-07-07,Shelize Braithwaite,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+40,576145.02,2883809,Unknown,2018-07-01,Sumera Ackbarali,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+41,576145.02,2883809,Unknown,2018-07-01,Sumera Ackbarali,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+42,576136.66,2883802.86,Unknown,2018-07-01,Sumera Ackbarali,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+43,576136.66,2883802.86,Unknown,2018-07-01,Sumera Ackbarali,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+44,685928.3,1173933.79,Moringa,2018-07-01,Troy Ramcharan,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+45,688232.18,1176718,Moringa,UNKNOWN,Troy Ramcharan,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+46,671180.51,1167130.69,Moringa,2018-07-01,Alyssa Ripla,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+47,673738.14,1181249.52,Unknown,2019-07-01,Andrea Abel,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+48,688903.3,1172459.93,Unknown,2020-07-01,Cheryl Bobb,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+49,684655.1,1176646.13,Moringa,2021-07-01,Gloria Jacobs,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+50,684628.35,1175407.75,Moringa,2022-07-01,Kaylan Jacobs,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+51,679121.01,1175906.78,Moringa,2023-07-01,Leah Madoo,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+52,668306.24,1137341.84,Unknown,2024-07-01,Lydia Chaote,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+53,688807.78,1175415.35,Moringa,2025-07-01,Maalik Rose,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+54,677895.38,1169076.1,Unknown,2026-07-01,Maryam Mohammed,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+55,673634.36,1167656.17,Moringa,2027-07-01,Raeesah Deen,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+56,688566.37,1167959.57,Moringa,2028-07-01,Sadiyah Chickoree,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+57,674713.44,1165308.1,Moringa,2029-07-01,Saloni Mangray,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+58,704583.5,1171007.82,Moringa,2030-07-01,Saranya Gajar,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+59,672882.37,1166659.97,Moringa,2018-06-29,Sarika B,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+60,673295.43,1167934.08,Moringa,2018-03-13,Shaniah Persad,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+61,680406.32,1176269.98,Moringa,2018-07-01,Stacey Berahzer,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+62,676969.93,1164609.99,Moringa,2018-03-13,Sydney Nandalal,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+63,687789.62,1175956.6,Moringa,Unknown,SAGHA Jordana Khan,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+64,674566.12,1176254.82,Moringa,2018-07-01,Annu Ramphalie Motilal,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+65,674566.12,1176254.82,Moringa,2018-07-01,Annu Ramphalie Motilal,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+66,674566.12,1176254.82,Moringa,Unknown,Chermeri DeSilva,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+67,674566.12,1176254.82,Unknown,Unknown,Daniel Hernandez,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+68,674566.12,1176254.82,Unknown,Unknown,Daniel Hernandez,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+69,674566.12,1176254.82,Unknown,2018-07-01,Debra Harrinanan,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+70,674566.12,1176254.82,Unknown,Unknown,dharrie39,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+71,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+72,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+73,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+74,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+75,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+76,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+77,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+78,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+79,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+80,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+81,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+82,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+83,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+84,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+85,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+86,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+87,674566.12,1176254.82,Unknown,Unknown,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+88,674566.12,1176254.82,Lime,2018-07-01,Dina Poon Chong,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+89,674566.12,1176254.82,Moringa,Unknown,Faith Persad,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+90,674566.12,1176254.82,Moringa,2018-07-01,Gail Adams,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+91,674566.12,1176254.82,Moringa,2018-07-01,Gail Adams,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+92,674566.12,1176254.82,Pommerac,2018-07-02,Hadiya Ali,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+93,674566.12,1176254.82,Pear,2018-07-02,Haddiyah Ali,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+94,674566.12,1176254.82,Grapes,2018-07-02,Haddiyah Ali,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+95,674566.12,1176254.82,Mulberry,2018-07-02,Haddiyah Ali,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+96,674566.12,1176254.82,Mulberry,2018-07-02,Haddiyah Ali,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+97,674566.12,1176254.82,Moringa,2018-07-01,Jaelena,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+98,674566.12,1176254.82,Moringa,Unknown,Kamila Ramsook,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+99,674566.12,1176254.82,Moringa,Unknown,Marissa Affoon,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+100,674566.12,1176254.82,Moringa,Unknown,Marissa Affoon,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+101,674566.12,1176254.82,Moringa,Unknown,Marissa Affoon,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+102,674566.12,1176254.82,Moringa,2018-06-28,Reanna Gooding,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+103,674566.12,1176254.82,Moringa,Unknown,Richard Hagley,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+104,674566.12,1176254.82,Unknown,Unknown,Roma Mahase,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+105,674566.12,1176254.82,Moringa,2018-07-01,Shana Pustam,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+106,674566.12,1176254.82,Moringa,2018-07-01,Shana Pustum,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+107,674566.12,1176254.82,Unknown,Unknown,Shea Marie Aaron,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+108,674566.12,1176254.82,Unknown,Unknown,Shreya,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+109,674566.12,1176254.82,Unknown,Unknown,Shreya,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+110,674566.12,1176254.82,Unknown,Unknown,Shreya,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+111,674566.12,1176254.82,Unknown,Unknown,Shreya,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+112,674566.12,1176254.82,Unknown,Unknown,Shreya,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+113,674566.12,1176254.82,Unknown,Unknown,Shreya,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+114,674566.12,1176254.82,Unknown,Unknown,Shreya,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+115,674566.12,1176254.82,Unknown,Unknown,Shreya,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+116,674566.12,1176254.82,Unknown,Unknown,Shreya,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+117,674566.12,1176254.82,Unknown,Unknown,Shreya,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+118,674566.12,1176254.82,Unknown,Unknown,Shreya,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+119,674566.12,1176254.82,Unknown,Unknown,Shreya,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+120,674566.12,1176254.82,Moringa,Unknown,Shreya,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+121,674566.12,1176254.82,Moringa,Unknown,Shreya,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+122,674566.12,1176254.82,Unknown,Unknown,Sylicia Donatien,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+123,674566.12,1176254.82,Moringa,2018-07-01,Vee 69,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+124,674566.12,1176254.82,Unknown,2018-02-12,SAGHA Anna Ramkalawan,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+125,674566.12,1176254.82,Moringa,2018-03-10,SAGHA Ariana Emery,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+126,674566.12,1176254.82,Moringa,2018-06-29,SAGHA Averil Ramchand 1,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+127,674566.12,1176254.82,Unknown,2018-06-29,SAGHA Averil Ramchand,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+128,674566.12,1176254.82,Moringa,UNKNOWN,SAGHA Bramlogan,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+129,674566.12,1176254.82,Moringa,2018-06-30,SAGHA Caitlin Warrick,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+130,674566.12,1176254.82,Moringa,2018-07-01,SAGHA Chemeri De Silva,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+131,674566.12,1176254.82,Moringa,UNKNOWN,SAGHA Emily R,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+132,674566.12,1176254.82,Moringa,2018-06-30,SAGHA Farzana Hosein,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+133,674566.12,1176254.82,Moringa,UNKNOWN,SAGHA Jokhoo Karishma,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+134,674566.12,1176254.82,Moringa,2018-07-01,SAGHA Leah Assing 2 trees,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+135,674566.12,1176254.82,Moringa,2019-07-01,SAGHA Leah Assing 2 trees,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+136,674566.12,1176254.82,King Orange,2018-07-01,SAGHA Marissa Gowrie,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+137,674566.12,1176254.82,Lime,2018-07-02,SAGHA Marissa Gowrie,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+138,674566.12,1176254.82,Unknown,UNKNOWN,SAGHA Maryam Ali,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+139,674566.12,1176254.82,Moringa,UNKNOWN,SAGHA Nadine Hosein 1,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+140,674566.12,1176254.82,Moringa,UNKNOWN,SAGHA Nadine Hosein 2,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+141,674566.12,1176254.82,Moringa,UNKNOWN,SAGHA Nikkita Goberdhan,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+142,674566.12,1176254.82,Broad Leaf Thyme,2018-07-01,SAGHA Radha Harrinan,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+143,674566.12,1176254.82,Moringa,2018-06-30,SAGHA Rookia Nurse,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+144,674566.12,1176254.82,Moringa,UNKNOWN,SAGHA Sapphire Alexander,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+145,674566.12,1176254.82,Moringa,UNKNOWN,SAGHA Selvon Miguel,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+146,674566.12,1176254.82,Moringa,UNKNOWN,SAGHA Serenity,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+147,674566.12,1176254.82,Moringa,2018-02-10,SAGHA Sherish Maharaj,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+148,674566.12,1176254.82,Moringa,UNKNOWN,SAGHA Shianna N,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+149,674566.12,1176254.82,Moringa,2018-07-01,SAGHA Shoba Ramlogan,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+150,674566.12,1176254.82,Moringa,UNKNOWN,SAGHA Soraya Ali,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+151,674566.12,1176254.82,Unknown,2018-07-01,SAGHA Sumayyah Khan,22.6kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+152,674566.12,1176254.82,Moringa,2018-03-11,SAGHA Tricia Dhanpaul,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+153,674566.12,1176254.82,Moringa,2018-06-30,SAGHA Tropical Organics,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+154,674566.12,1176254.82,Moringa,UNKNOWN,SAGHA Vanessa Mannan,70kg CO2/yr,St. Augustine Girls' High School (SAGHS)
+155,689426.76,1166874.19,Moringa,2018-07-01,Alyssa Ripla,70kg CO2/yr,
+156,673455.9,1167949.6,Moringa,2018-06-30,Anastasia R,70kg CO2/yr,
+157,673737.81,1181250.4,Star Apple (Caimite),2018-06-30,Andrea Abel,22.6kg CO2/yr,
+158,679306.82,1167104.17,Moringa,2018-02-12,Anna Ramkalawan,70kg CO2/yr,
+159,674969.46,1163976.88,Mango,2018-07-01,Annu Ramphalie-Motilal,22.6kg CO2/yr,
+160,674969.46,1163976.88,Neem,2018-07-01,Annu Ramphalie-Motilal,22.6kg CO2/yr,
+161,,,Moringa,2018-03-10,Ariana Emery,70kg CO2/yr,
+162,,,Moringa,N/A,Arshia Neha Singh,70kg CO2/yr,
+163,,,Moringa,N/A,Arya Singh,70kg CO2/yr,
+164,576136.15,2883803.74,Desert Rose,2018-07-01,Asifa Ackbarali,22.6kg CO2/yr,
+165,673525.95,1179427.99,Moringa,2018-06-29,Averil Ramchand,70kg CO2/yr,
+166,673532.98,1179421.28,Portugal,2018-06-29,Averil Ramchand,22.6kg CO2/yr,
+167,,,Moringa,N/A,B Ramlogan,70kg CO2/yr,
+168,676324.33,1161844.49,Moringa,2018-06-30,Caitlin Warrick,70kg CO2/yr,
+169,684392.99,1176594.6,Pollock Avocado,2018-07-01,Camanee Lutchman,22.6kg CO2/yr,
+170,,,Moringa,2019-07-01,Camanee Lutchman,70kg CO2/yr,
+171,,,Moringa,2019-07-01,Camanee Lutchman,70kg CO2/yr,
+172,685927.31,1173934.78,Moringa,2018-07-01,Camille Ramcharan,70kg CO2/yr,
+173,685927.09,1173935.22,Moringa,2018-07-01,Camille Ramcharan,70kg CO2/yr,
+174,688780.63,1174175.61,Moringa,2018-07-01,Chelsea Liverpool,70kg CO2/yr,
+175,688780.63,1174175.61,Moringa,2018-07-01,Chelsea Liverpool,70kg CO2/yr,
+176,,,Moringa,N/A,Chemeri De Silva,70kg CO2/yr,
+177,,,Moringa,N/A,Chemeri De Silva,70kg CO2/yr,
+178,,,Moringa,2018-07-01,Chemeri De Silva,70kg CO2/yr,
+179,688903.3,1172459.93,,2018-07-01,Cheryl-Ann Bobb,,
+180,677456.26,1177708.98,King Orange,2018-07-01,Cynthia and George Gowrie,22.6kg CO2/yr,
+181,,,Moringa,N/A,Daniel Hernandez,70kg CO2/yr,
+182,,,Moringa,N/A,Daniel Hernandez,70kg CO2/yr,
+183,,,,2018-07-01,Debra Harrinanan,,
+184,,,,N/A,dharrie39,,
+185,,,Coconut,N/A,dharrie39,,
+186,,,Lime,2018-07-01,Dina Poon Chong,,
+187,,,,N/A,Dina Poon Chong,,
+188,,,,N/A,Dina Poon Chong,,
+189,,,,N/A,Dina Poon Chong,,
+190,,,,N/A,Dina Poon Chong,,
+191,,,,N/A,Dina Poon Chong,,
+192,,,,N/A,Dina Poon Chong,,
+193,,,,N/A,Dina Poon Chong,,
+194,,,,N/A,Dina Poon Chong,,
+195,,,,N/A,Dina Poon Chong,,
+196,,,,N/A,Dina Poon Chong,,
+197,,,,N/A,Dina Poon Chong,,
+198,,,,N/A,Dina Poon Chong,,
+199,,,,N/A,Dina Poon Chong,,
+200,,,,N/A,Dina Poon Chong,,
+201,,,,N/A,Dina Poon Chong,,
+202,,,,N/A,Dina Poon Chong,,
+203,,,,N/A,Dina Poon Chong,,
+204,,,,N/A,Dina Poon Chong,,
+205,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+206,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+207,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+208,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+209,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+210,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+211,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+212,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+213,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+214,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+215,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+216,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+217,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+218,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+219,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+220,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+221,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+222,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+223,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+224,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+225,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+226,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+227,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+228,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+229,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+230,,,Moringa,2018-06-29,Dina Poon Chong,70kg CO2/yr,
+231,674575.05,1176221.57,Moringa,N/A,Emily Ramcharan,70kg CO2/yr,
+232,674505.55,1176223.76,Moringa,2018-06-29,Ester Dumoy,70kg CO2/yr,
+233,,,Moringa,N/A,Faith Persad,70kg CO2/yr,
+234,,,Moringa,2018-06-30,Farzana Hosein,70kg CO2/yr,
+235,,,Moringa,2018-07-01,Gail Adams-Bigram,70kg CO2/yr,
+236,,,Moringa,2018-07-01,Gail Adams-Bigram,70kg CO2/yr,
+237,684655.1,1176646.13,Moringa,2018-07-01,Gloria Jacobs,70kg CO2/yr,
+238,,,Pommerac,2018-07-02,Haddiyah Ali,22.6kg CO2/yr,
+239,,,Pear,2018-07-02,Haddiyah Ali,22.6kg CO2/yr,
+240,,,Mulberry,2018-07-02,Haddiyah Ali,22.6kg CO2/yr,
+241,,,Mulberry,2018-07-02,Haddiyah Ali,22.6kg CO2/yr,
+242,,,Moringa,2018-07-01,Jaelena,70kg CO2/yr,
+243,703040.99,1171195.29,Unknown,2018-06-28,Guaico Presbyterian School,22.6kg CO2/yr,
+244,703040.99,1171195.29,Unknown,2018-06-28,Guaico Presbyterian School,22.6kg CO2/yr,
+245,703040.99,1171195.29,Unknown,2018-06-28,Guaico Presbyterian School,22.6kg CO2/yr,
+246,674259.61,1156454.01,Moringa,N/A,Karishma Jokhoo,70kg CO2/yr,
+247,,,Avocado,N/A,Kaitlyn Miguel,22.6kg CO2/yr,
+248,,,Moringa,N/A,Kamila Ramsook,70kg CO2/yr,
+249,672534.16,1185894.74,Moringa,2018-07-08,Kathleen Anderson,70kg CO2/yr,
+250,684625.94,1175408.95,Moringa,2018-07-01,Kaylan Jacobs,70kg CO2/yr,
+251,679120.89,1175908.55,Moringa,2018-07-01,Leah Madoo,70kg CO2/yr,
+252,674575.05,1176221.57,Moringa,2018-07-01,Lisa Assing,70kg CO2/yr,
+253,674575.05,1176221.57,Moringa,2018-07-01,Lisa Assing,70kg CO2/yr,
+254,682767.43,1178237.07,Red African Tulip,2018-07-01,Luise Beckles,22.6kg CO2/yr,
+255,682767.38,1178246.91,Red African Tulip,2018-07-01,Luise Beckles,22.6kg CO2/yr,
+256,682767.31,1178260.41,Cassia Fistula (shower of gold),2018-07-01,Luise Beckles,22.6kg CO2/yr,
+257,668304.92,1137342.17,Soursop,2018-07-01,Lydia Choate,22.6kg CO2/yr,
+258,688807.76,1175417.45,Moringa,2018-03-10,Maalik Rose,70kg CO2/yr,
+259,688803.59,1175420.52,Moringa,2018-07-01,Maalik Rose,70kg CO2/yr,
+260,689189.14,1174843.47,Moringa,2018-07-01,Maalik Rose,70kg CO2/yr,
+261,,,Moringa,N/A,Marissa Afoon,70kg CO2/yr,
+262,,,Moringa,N/A,Marissa Afoon,70kg CO2/yr,
+263,,,Moringa,N/A,Marissa Afoon,70kg CO2/yr,
+264,672753.5,1178276.46,Lime,2018-07-01,Marissa Gowrie,22.6kg CO2/yr,
+265,719126.87,1135713.64,Moringa,2018-07-08,Marq Bahadur,70kg CO2/yr,
+266,,,Moringa,2018-07-01,Maryam Ali,70kg CO2/yr,
+267,677897.1,1169081.64,,2018-06-30,Maryam Mohammed,,
+268,677893.18,1169078.85,,2018-06-30,Maryam Mohammed,,
+269,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+270,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+271,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+272,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+273,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+274,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+275,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+276,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+277,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+278,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+279,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+280,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+281,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+282,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+283,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+284,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+285,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+286,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+287,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+288,686056.87,1157123.93,Moringa,2018-06-29,Natasha Sharma-Mahadeo,70kg CO2/yr,
+289,670287.91,1176014.86,Moringa,2018-06-30,Nikkita Goberdhan,70kg CO2/yr,
+290,675330.77,1179167.84,Moringa,2018-07-01,Patricia Jaggasar,70kg CO2/yr,
+291,679383.75,1175777.2,Moringa,2018-07-01,Patricia Jaggasar,70kg CO2/yr,
+292,,,Broad Leaf Thyme,2018-07-01,Radha Tricia Harrinanan,22.6kg CO2/yr,
+293,673634.36,1167656.17,Moringa,2018-07-01,Raeesah Deen,70kg CO2/yr,
+294,,,Moringa,2018-06-28,Reanna Gooding,70kg CO2/yr,
+295,678359.88,1177881.42,Moringa,2018-07-01,Kyèleigh Hagley,70kg CO2/yr,
+296,678359.88,1177881.42,Moringa,2018-07-01,Kyèleigh Hagley,70kg CO2/yr,
+297,703423.44,1170822.77,Starch Mango,2018-07-02,Roma Mahase,22.6kg CO2/yr,
+298,680070.14,1176338.88,Moringa,2018-06-30,Rookia Nurse,70kg CO2/yr,
+299,688563.62,1167961.99,Moringa,2018-03-08,Sadiyah Chickoree,70kg CO2/yr,
+300,674723.58,1165337.35,Moringa,2018-06-24,Saloni Mangray,70kg CO2/yr,
+301,674721.81,1165320.2,Moringa,2018-06-24,Saloni Mangray,70kg CO2/yr,
+302,674710.7,1165309.63,Moringa,2018-06-24,Saloni Mangray,70kg CO2/yr,
+303,674712.78,1165309.42,Moringa,2018-06-24,Saloni Mangray,70kg CO2/yr,
+304,704583.5,1171008.48,Moringa,2018-07-01,Saranya Gajar,70kg CO2/yr,
+305,672882.37,1166659.97,Moringa,2018-06-29,Sarika Bansee,70kg CO2/yr,
+306,672882.37,1166659.97,Moringa,2018-06-29,Sarika Bansee,70kg CO2/yr,
+307,672882.37,1166659.97,Moringa,2018-06-29,Sarika Bansee,70kg CO2/yr,
+308,672851.94,1166659.82,Moringa,2018-06-29,Sarika Bansee,70kg CO2/yr,
+309,672882.37,1166659.97,Moringa,2018-06-29,Sarika Bansee,70kg CO2/yr,
+310,,,Moringa,N/A,Serenity,70kg CO2/yr,
+311,673293.89,1167934.73,Moringa,2018-03-13,Shaniah Persad,70kg CO2/yr,
+312,,,Moringa,2018-07-01,Shannah Pustam,70kg CO2/yr,
+313,,,Moringa,2018-07-01,Shannah Pustam,70kg CO2/yr,
+314,,,,N/A,Shea-Marie Aaron,,
+315,678204.68,1177766,Moringa,2018-07-07,Shelize Brathwaite,70kg CO2/yr,
+316,,,Moringa,2018-02-10,Sherish Maharaj,70kg CO2/yr,
+317,,,Moringa,N/A,Shianna Nandoo,70kg CO2/yr,
+318,,,Moringa,2018-07-01,Shoba Ramlogan,70kg CO2/yr,
+319,,,,N/A,Shreya Deonarine,,
+320,,,,N/A,Shreya Deonarine,,
+321,,,,N/A,Shreya Deonarine,,
+322,,,,N/A,Shreya Deonarine,,
+323,,,,N/A,Shreya Deonarine,,
+324,,,,N/A,Shreya Deonarine,,
+325,,,Neem,N/A,Shreya Deonarine,22.6kg CO2/yr,
+326,,,,N/A,Shreya Deonarine,,
+327,,,,N/A,Shreya Deonarine,,
+328,,,,N/A,Shreya Deonarine,,
+329,,,,N/A,Shreya Deonarine,,
+330,,,Moringa,N/A,Shreya PSB,70kg CO2/yr,
+331,,,Moringa,N/A,Shreya PSB,70kg CO2/yr,
+332,,,Lime,2018-07-01,Sita Gowrie (New York),22.6kg CO2/yr,
+333,,,Moringa,N/A,Soraya Ali,70kg CO2/yr,
+334,680406.31,1176271.2,Moringa,2018-07-01,Stacey Berahzer,70kg CO2/yr,
+335,,,,2018-07-01,Sumayyah Khan,,
+336,,,Moringa,2018-07-01,Sumayyah Khan,70kg CO2/yr,
+337,,,,2018-07-01,Sumayyah Khan,,
+338,576143.52,2883809.98,Avocado,2018-07-01,Sumera Ackbarali,22.6kg CO2/yr,
+339,676968.39,1164611.53,Moringa,2018-03-13,Sydney Nandalal,70kg CO2/yr,
+340,,,,N/A,Sylicia Donatien,,
+341,576136.15,2883803.74,Desert Rose,2018-07-01,Tariqa Ackbarali,22.6kg CO2/yr,
+342,,,,2018-06-29,Tessa,,
+343,,,,2018-06-29,Tessa,,
+344,,,Moringa,2018-03-11,Tricia Dhanpaul,70kg CO2/yr,
+345,,,Broad Leaf Thyme,2018-06-30,Tropical Organics,22.6kg CO2/yr,
+346,688231.09,1176718.21,Moringa,2018-07-09,Troy Ramcharan,70kg CO2/yr,
+347,685927.09,1173935.22,Moringa,2018-07-01,Troy Ramcharan,70kg CO2/yr,
+348,685927.31,1173934.78,Moringa,2018-07-01,Troy Ramcharan,70kg CO2/yr,
+349,686859.15,1171516.82,Moringa,2018-03-01,Vanessa Mannan,70kg CO2/yr,
+350,,,Moringa,2018-07-01,Vee.69,70kg CO2/yr,
+351,576138.52,2883809.95,Gardenia,2018-07-01,Zubaida Ackbarali,22.6kg CO2/yr,
+352,689141.25,1167913.63,Moringa,2018-04-20,Brazil Students,70kg CO2/yr,
+353,689232.76,1167852.64,Moringa,2018-04-20,Brazil Students,70kg CO2/yr,
+354,689202.44,1167852.47,Moringa,2018-04-20,CZITT Staff,70kg CO2/yr,
+355,689305.39,1167920.62,Moringa,N/A,Aaliyah,70kg CO2/yr,Brazil (Has Images for Demo)
+356,689305.39,1167920.62,Moringa,N/A,Aaliyah,70kg CO2/yr,Brazil (Has Images for Demo)
+357,689305.39,1167920.62,Moringa,N/A,Dana,70kg CO2/yr,Brazil (Has Images for Demo)
+358,689305.39,1167920.62,Moringa,N/A,Giselle,70kg CO2/yr,Brazil (Has Images for Demo)
+359,689305.39,1167920.62,Moringa,N/A,Greg,70kg CO2/yr,Brazil (Has Images for Demo)
+360,689305.39,1167920.62,Moringa,N/A,La Horquetta South Primary School,70kg CO2/yr,Brazil (Has Images for Demo)
+361,689305.39,1167920.62,Moringa,N/A,La Horquetta South Primary School,70kg CO2/yr,Brazil (Has Images for Demo)
+362,689202.44,1167852.47,Moringa,2018-04-20,Brazil Secondary School Students,70kg CO2/yr,Brazil (Has Images for Demo)
+363,689202.44,1167852.47,Moringa,2018-04-20,Brazil Secondary School Students,70kg CO2/yr,Brazil (Has Images for Demo)
+364,689202.44,1167852.47,Moringa,2018-04-20,Brazil Secondary School Students,70kg CO2/yr,Brazil (Has Images for Demo)
+365,689202.44,1167852.47,Moringa,2018-04-20,Brazil Secondary School Students,70kg CO2/yr,Brazil (Has Images for Demo)
+366,677527.42,1162044.25,Moringa,2018-04-22,Brazil Secondary School Staff,70kg CO2/yr,Brazil (Has Images for Demo)
+367,677466.67,1162043.94,Moringa,2018-04-22,Brazil Secondary School Staff,70kg CO2/yr,Brazil (Has Images for Demo)
+368,689305.39,1167920.62,Moringa,N/A,Brazil Secondary School Staff,70kg CO2/yr,Brazil (Has Images for Demo)
+369,689305.39,1167920.62,Moringa,N/A,Brazil Secondary School Staff,70kg CO2/yr,Brazil (Has Images for Demo)
+370,689305.39,1167920.62,Moringa,N/A,Nicole,70kg CO2/yr,Brazil (Has Images for Demo)
+371,689305.39,1167920.62,Moringa,N/A,Petra,70kg CO2/yr,Brazil (Has Images for Demo)
+372,689305.39,1167920.62,Moringa,N/A,Ramdass,70kg CO2/yr,Brazil (Has Images for Demo)
+373,689305.39,1167920.62,Moringa,N/A,Revina Ganece,70kg CO2/yr,Brazil (Has Images for Demo)
+374,689305.39,1167920.62,Moringa,N/A,Revina Ganece,70kg CO2/yr,Brazil (Has Images for Demo)
+375,689305.39,1167920.62,Moringa,N/A,Russel,70kg CO2/yr,Brazil (Has Images for Demo)
+376,689305.39,1167920.62,Moringa,N/A,Slater,70kg CO2/yr,Brazil (Has Images for Demo)
+377,689305.39,1167920.62,Moringa,N/A,Slater,70kg CO2/yr,Brazil (Has Images for Demo)
+378,689305.39,1167920.62,Moringa,N/A,Slater,70kg CO2/yr,Brazil (Has Images for Demo)
+379,677527.42,1162044.25,Soursop,2018-04-22,Annonymous,22.6kg CO2/yr,Brazil (Has Images for Demo)
+380,689305.39,1167920.62,Moringa,N/A,Tricia,70kg CO2/yr,Brazil (Has Images for Demo)
+381,689305.39,1167920.62,Moringa,N/A,Trishel,70kg CO2/yr,Brazil (Has Images for Demo)
+382,662621,1180268,Moringa,,,70kg CO2/yr,
+383,662627,1180271,Moringa,,,70kg CO2/yr,
+384,662636,1180269,Moringa,,,70kg CO2/yr,
+385,662638,1180270,Moringa,,,70kg CO2/yr,
+386,662642,1180271,Moringa,,,70kg CO2/yr,
+387,662649,1180273,Moringa,,,70kg CO2/yr,
+388,662655,1180271,Moringa,,,70kg CO2/yr,
+389,662659,1180272,Moringa,,,70kg CO2/yr,
+390,662662,1180273,Moringa,,,70kg CO2/yr,
+391,662668,1180272,Moringa,,,70kg CO2/yr,
+392,662674,1180273,Moringa,,,70kg CO2/yr,
+393,662679,1180273,Moringa,,,70kg CO2/yr,
+393,666743.69,1154218.29,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.69,1154218.29,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,666743.68,1154218.73,Unknown,2021-03-21,,22.6kg CO2/yr,
+393,668441.4,1152183.94,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668449.01,1152172.58,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668447.7,1152149.13,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668446.25,1152131.42,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668439.54,1152115.68,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668426.82,1152120.38,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668416.77,1152137.14,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668384.04,1152135.1,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668374.83,1152139.26,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668352.15,1152141.36,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668342.97,1152137.78,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668324.66,1152143.99,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668308.45,1152144.47,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668278.25,1152140.23,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668277.25,1152166.44,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668281.35,1152177.52,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668276.6,1152186.68,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668282.68,1152196.77,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668276.3,1152203.93,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,
+393,668278.58,1152207.59,Unknown,08-Oct-19,Republic Bank Limited Employees,22.6kg CO2/yr,

@@ -207,7 +207,8 @@
       let beneficiaries = {}; //container to hold the separated data per beneficiary org
       let org_control;
 
-      fetch("./treesdata_wgs84.geojson")
+      //fetch("./treesdata_wgs84.geojson")
+      fetch("data/trees_data.geojson")
         .then((response) => {
           return response.json();
         })
@@ -217,7 +218,7 @@
           sidebar.addPanel({
             id: "charts",
             tab: '<img class="sidebar-tab-icon" src="icons/chart_g&b.png">', //placeholder
-            title: "(Experimental) Graphs",
+            title: "Graphs",
             pane: '<h2>Total Trees Planted per Organization</h2><p>Hover to show values:</p><div id="chartdiv"></div>',
             position: "top",
           });
@@ -257,7 +258,7 @@
             tab: '<img class="sidebar-tab-icon" src="icons/magglass_blue.png">', //placeholder
             title: "Searchbar",
             pane: `<h2>Beneficiary Organizations</h2>
-      				<p>Left-click: *WIP) Toggle choice on map. Right-click/Longpress to highlight the choice on map.</p>
+      				<p>Left-click: (Work in Progress) Toggle choice on map. Right-click/Longpress to highlight the choice on map.</p>
       								<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
       								<!--<button id="clearButton" onclick="clearSelections()">Clear Selection</button>-->
       								<ul id="myUL">
